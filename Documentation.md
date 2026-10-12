@@ -33,6 +33,11 @@
 
 ## !1 (History expansion): Runs command number 1 from your command history list. (!<number> repeats that specific command).
 
+<img width="844" height="843" alt="Screenshot 2026-10-07 131319" src="https://github.com/user-attachments/assets/798bf0e7-0197-4163-8b58-7284ca806b54" />
+<img width="848" height="761" alt="Screenshot 2026-10-07 131452" src="https://github.com/user-attachments/assets/e92571a3-42da-4c5a-b1b9-0e011ce161d6" />
+
+
+
 ## Double Quotes ("..."): Interpolates variables and command substitutions while preserving spaces, but prevents wildcard expansion (globbing).
 
 ## Backquotes (`...`) or $(...) (Command substitution): Executes the enclosed command and substitutes its output into the surrounding command. (e.g., echo "Today is $(date)")
