@@ -1,4 +1,4 @@
-# Documentation
+# 1. Documentation
 ## man <command>: Displays the manual page (documentation) for a specific command. (e.g., man ls)
 
 ## whatis <command>: Provides a brief, one-line description of a command from its manual page.
@@ -35,35 +35,34 @@
 
 ## Double Quotes ("..."): Interpolates variables and command substitutions while preserving spaces, but prevents wildcard expansion (globbing).
 
-Backquotes (`...`) or $(...) (Command substitution): Executes the enclosed command and substitutes its output into the surrounding command. (e.g., echo "Today is $(date)")
+## Backquotes (`...`) or $(...) (Command substitution): Executes the enclosed command and substitutes its output into the surrounding command. (e.g., echo "Today is $(date)")
 
-4. Environment & Variables
+# 4. Environment & Variables
 To display the value of a variable: Precede the variable name with a dollar sign $. (e.g., echo $USER)
 
-env: Prints all exported environment variables currently set in the session.
+## env: Prints all exported environment variables currently set in the session.
 
-export <VAR>=<value>: Sets an environment variable so it is available to child processes and scripts. (e.g., export EDITOR=nano)
+## export <VAR>=<value>: Sets an environment variable so it is available to child processes and scripts. (e.g., export EDITOR=nano)
 
-unset <VAR>: Removes (deletes) a shell variable or environment variable.
+## unset <VAR>: Removes (deletes) a shell variable or environment variable.
 
-PATH: A special environment variable ($PATH) containing a colon-separated list of directories where the shell looks for executable programs.
+## PATH: A special environment variable ($PATH) containing a colon-separated list of directories where the shell looks for executable programs.
 
-5. Command Location & Inspection
-type <command>: Indicates how a given command will be interpreted by the shell (whether it's a builtin, keyword, alias, or external file).
+# 5. Command Location & Inspection
+## type <command>: Indicates how a given command will be interpreted by the shell (whether it's a builtin, keyword, alias, or external file).
 
-which <command>: Locates the executable file associated with a given command by searching the $PATH directories.
+## which <command>: Locates the executable file associated with a given command by searching the $PATH directories.
 
-6. Customization & Flow Control
-alias <name>='<command>': Creates a shortcut or custom name for a command or command sequence. (e.g., alias ll='ls -la')
+# 6. Customization & Flow Control
+## alias <name>='<command>': Creates a shortcut or custom name for a command or command sequence. (e.g., alias ll='ls -la')
 
-unalias <name>: Removes an existing command alias.
+## unalias <name>: Removes an existing command alias.
 
-Functions: Reusable blocks of shell commands defined in your script or shell configuration.
+## Functions: Reusable blocks of shell commands defined in your script or shell configuration.
 
-Bash
-my_func() {
-    echo "Hello $1"
-}
-| (Pipe operator): Redirects the standard output of the command on the left as the standard input to the command on the right. (e.g., cat file.txt | grep "error")
+     Bash
+      my_func() {
+        echo "Hello $1"
+    }
+## | (Pipe operator): Redirects the standard output of the command on the left as the standard input to the command on the right. (e.g., cat file.txt | grep "error")
 
-What specific command or workflow would you like to explore or practice next?
